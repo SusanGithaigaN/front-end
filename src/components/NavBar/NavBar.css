@@ -1,0 +1,36 @@
+#nav{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    /* font-size: 33px; */
+    padding-top: 1.2em;
+    text-decoration: none !important;;
+    padding-bottom: 6em;
+    /* background-color: lightgrey; */
+    /* border-color: lightgrey; */
+    width: 100%;
+}
+#navtxt{
+    font-size: 30px;
+    /* font-weight:bold; */
+    color: black;
+    padding-left: 1.7em;
+    border-bottom: 2cqmax;
+}
+#apptitle{
+    /* padding-left:12em; */
+    /* font-weight: bolder; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* float: left; */
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+    padding-left: 16em;
+    /* padding-right: 18em; */
+    /* padding-top: 0.7em; */
+    /* border-color: transparent; */
+    /* background-color: lightgrey; */
+    /* padding-bottom: 1px; */
+    text-decoration: none;
+}

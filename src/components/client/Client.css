@@ -1,0 +1,28 @@
+.client{
+    background-image: url(https://bit.ly/3KK6z7M);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    height: 100vh;  
+}
+
+.para2{
+    /* padding-top: 2em; */
+    font-size: 2.5em;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.para2{
+    color: transparent;
+    font-weight: 900;
+    text-shadow: 0 1.5em 0.25px transparent transparent;
+    animation: moveUp 250ms ease-in-out 1 forwards;
+
+    --text-color:black;
+}
+
+
+.g-4{
+    padding-left: 6em;    
+}
