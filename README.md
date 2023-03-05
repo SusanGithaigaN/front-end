@@ -4,6 +4,9 @@
 
 - A platform that enables users to browse and reserve rental cars that are currently available, all in one convenient place.
 
+* The following image demonstrates the application functionality:
+<img src ="./project.png">
+
 ## Tech stack
 - Ruby.
 - HTML & CSS.
