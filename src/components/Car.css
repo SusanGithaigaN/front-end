@@ -1,0 +1,13 @@
+.client{
+    align-items: center !important;
+    padding-bottom: 0em !important;
+}
+
+.g-4{
+    padding-bottom: 2px !important;
+}
+
+.custom-card {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }

@@ -5,12 +5,11 @@
 
 .home{
     /* background-image: url(https://bit.ly/3KHx0Lu); */
-    background-image: url(https://bit.ly/3KK6z7M);
-    /* background-color: aliceblue; */
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaOXWa2hBJ6ePTTwc7dxkfJRojTuDvPNFB4w&usqp=CAU); */
     background-size: cover;
     background-repeat: no-repeat;
     padding-left: 6em;
-    padding-top: 8em;
+    padding-top: 18em;
     height: 100vh;
 }
 
@@ -19,9 +18,9 @@
     font-size: 2.5em;
     font-family: 'Abril Fatface', cursive;
     font-family: 'Outfit', sans-serif;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
+
 .para{
     color: transparent;
     font-weight: 900;
@@ -38,7 +37,7 @@
 }
 .para:nth-child(3){
     animation-delay: 1050ms;
-
+    font-weight: 100;
     --text-color: black;
     font-size: 18px;
 }

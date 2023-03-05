@@ -7,8 +7,9 @@ export default function Home() {
         <div className='home'>
             <p className='para'>Hi there,</p> 
              <p className='para'>Welcome to Hireo</p>
-                <p className='para'>Lorem ipsum</p>
-            <Button variant="dark" className='para' href='/client'>Hire with Us</Button>
+                <p className='para'>- the platform that makes car rental easy and hassle-free!</p>
+            <Button variant="dark" className='btn' href='/client'>Hire with Us</Button>
+            
             </div>
     </div>
 );

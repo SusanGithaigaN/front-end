@@ -1,5 +1,5 @@
 .client{
-    background-image: url(https://bit.ly/3KK6z7M);
+    /* background-image: url(https://bit.ly/3KK6z7M); */
     background-size: cover;
     background-repeat: no-repeat;  
     height: 100vh;  
@@ -14,10 +14,12 @@
     text-align: center;
 }
 .para2{
+    padding-top: 6em;
     color: transparent;
     font-weight: 900;
     text-shadow: 0 1.5em 0.25px transparent transparent;
     animation: moveUp 250ms ease-in-out 1 forwards;
+    /* font-size: 24px; */
 
     --text-color:black;
 }

@@ -2,21 +2,25 @@
     display: flex;
     flex-direction: row;
     float: left;
-    /* font-size: 33px; */
     padding-top: 1.2em;
     text-decoration: none !important;;
-    padding-bottom: 6em;
-    /* background-color: lightgrey; */
-    /* border-color: lightgrey; */
+    /* padding-bottom: 6em; */
+    background-color:  #FFDF9E;
     width: 100%;
 }
-#navtxt{
+#navtxt, #navtxt1{
     font-size: 30px;
     /* font-weight:bold; */
     color: black;
     padding-left: 1.7em;
     border-bottom: 2cqmax;
 }
+
+.Navbar-logo {
+    height: 80px;
+    width: auto;
+    padding-left: 15em;
+  }
 #apptitle{
     /* padding-left:12em; */
     /* font-weight: bolder; */
@@ -26,11 +30,13 @@
     font-size: 40px;
     font-weight: bolder;
     color: black;
-    padding-left: 16em;
+    /* padding-left: 10em; */
     /* padding-right: 18em; */
     /* padding-top: 0.7em; */
     /* border-color: transparent; */
     /* background-color: lightgrey; */
     /* padding-bottom: 1px; */
     text-decoration: none;
+    padding-right: 5em;
 }
+
