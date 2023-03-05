@@ -4,18 +4,18 @@ import { Container } from 'react-bootstrap';
 import CarCard from "./CarCard"
 
 function Car(){
-    const base_url = "http://localhost:9292/"
+    const url = "http://localhost:9292/"
   
     const [ carList, setCarList ] = useState([]);
   
     useEffect(() =>{
-      const fetchData = async () => {
-        const data = await fetch(base_url)
-        const json = await data.json()
-        setCarList(json)
+      const carInfo = async () => {
+        const carData = await fetch(url)
+        const response = await carData.json()
+        setCarList(response)
       }
   
-      fetchData().catch(console.error)
+      carInfo().catch(console.error)
       
     }, [])
   
