@@ -24,8 +24,8 @@ function CarCard(props) {
             <Card.Title>In use since: {carObj.datetime}</Card.Title>
             <Card.Title>Speed limit: {carObj.speed}</Card.Title>
             <Card.Text>
-              {/* <Link to={`/car/${carObj.uniq_id}`}><Button variant='outline-secondary' size='sm'>Book Car</Button>{' '}</Link> */}
-              <Link to={`/car/${carObj.uniq_id}/users`}><Button variant='outline-secondary' size='sm'>Book Car</Button>{' '}</Link>
+              <Link to={`/car/${carObj.uniq_id}`}><Button variant='outline-secondary' size='sm'>Book Car</Button>{' '}</Link>
+              {/* <Link to={`/car/${carObj.uniq_id}/users`}><Button variant='outline-secondary' size='sm'>Book Car</Button>{' '}</Link> */}
 
             </Card.Text>
           </Card.Body>
