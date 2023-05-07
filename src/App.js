@@ -8,6 +8,7 @@ import About from './components/about/About';
 // import Owners from './components/owners/Owner'
 import Dashboard from './components/Admin/Dashboard';
 import Welcome from './components/Admin/Welcome';
+import AllCars from './components/Admin/AllCars';
 
 
 
@@ -22,6 +23,7 @@ function App() {
       {/* <Route exact path='owners' element={<Owners />} /> */}
       <Route exact path='/dashboard' element={<Dashboard />} />
       <Route exact path='/welcome' element={<Welcome />} />
+      <Route exact path='/allcars' element={<AllCars />} />
       </Routes>
       </BrowserRouter>
   );

@@ -37,3 +37,18 @@ body {
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   }
+
+  /* dashboard welcome message */
+  .dashboard{
+    margin-top: 20em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #start{
+    margin-top: 2em;
+    width: fit-content;
+    font-size: 1em
+  }
