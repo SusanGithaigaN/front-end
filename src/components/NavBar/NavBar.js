@@ -16,7 +16,7 @@ export default function NavBar() {
             <Nav className="me-auto">
             <Nav.Link href="/" id='navtxt'>Home</Nav.Link>
               <Nav.Link href="about" id='navtxt'>About Us</Nav.Link>
-              <Nav.Link href="client" id='navtxt'>🚘 Hire</Nav.Link>
+              {/* <Nav.Link href="client" id='navtxt'>🚘 Hire</Nav.Link> */}
 
                 <img src={logo} alt='logo' className='Navbar-logo' />
 
