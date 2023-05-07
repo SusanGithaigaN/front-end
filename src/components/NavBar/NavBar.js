@@ -21,7 +21,7 @@ export default function NavBar() {
                 <img src={logo} alt='logo' className='Navbar-logo' />
 
               <Nav.Link href="/" id='apptitle'>ireo</Nav.Link>
-              <Nav.Link href="/owners" id='navtxt' className='one1'>👤 Admin</Nav.Link>
+              <Nav.Link href="/dashboard" id='navtxt' className='one1'>👤 Admin</Nav.Link>
             </Nav>
         </Navbar.Collapse>
         </Container>

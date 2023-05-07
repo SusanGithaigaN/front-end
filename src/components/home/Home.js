@@ -1,9 +1,11 @@
+import NavBar from '../NavBar/NavBar';
 import './Home.css'
 import Button from 'react-bootstrap/Button'
 
 export default function Home() {
   return (
     <div>
+    <NavBar />
         <div className='home'>
             <p className='para'>Hi there,</p> 
              <p className='para'>Welcome to Hireo</p>
