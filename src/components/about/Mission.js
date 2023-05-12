@@ -35,7 +35,7 @@ export default function Mission() {
         </MDBTabsItem>
         <MDBTabsItem>
           <MDBTabsLink onClick={() => handleBasicClick('tab2')} active={basicActive === 'tab2'}>
-            OurVision
+            Our Vision
             {/* <MDBCardText>
             At Hireo, we understand how frustrating it can be to find a suitable
           rental car, especially when you're short on time. That's why we've
@@ -61,12 +61,20 @@ export default function Mission() {
         </MDBCol> */}
         <MDBCol md='8'>
           <MDBCardBody>
-            <MDBCardTitle>Our mission</MDBCardTitle>
+            <MDBCardTitle id='heading-2'>Our mission</MDBCardTitle>
             <MDBCardText>
-            At Hireo, we understand how frustrating it can be to find a suitable
-          rental car, especially when you're short on time. That's why we've
-          created a platform that enables users to browse and reserve rental cars
-          that are currently available, all in one convenient place.
+            Our mission at Hireo Car Hire is to provide seamless and convenient access to quality vehicles, 
+            empowering individuals and businesses to explore their journeys with confidence and freedom. 
+            We strive to be the premier car hiring site, offering a diverse and well-maintained fleet,
+             exceptional customer service, and innovative technological solutions.
+              By delivering exceptional experiences, fostering trust, and promoting sustainability, 
+              we aim to enhance the way people travel and create lasting memories on the road.
+              <br />
+              <span style={{fontStyle: 'italic', color: 'orange', fontWeight: 'bold'}}>
+                Hireo:
+              </span>
+              <span style={{fontStyle: 'italic', color: 'blue', fontWeight: 'bold'}}> Unleash the Joy of the Journey.</span>
+             
             </MDBCardText>
             <MDBCardText>
               {/* <small className='text-muted'>Last updated 3 mins ago</small> */}
@@ -87,12 +95,11 @@ export default function Mission() {
         </MDBCol> */}
         <MDBCol md='8'>
           <MDBCardBody>
-            <MDBCardTitle>Our Vision</MDBCardTitle>
-            <MDBCardText>
-            At Hireo, we understand how frustrating it can be to find a suitable
-          rental car, especially when you're short on time. That's why we've
-          created a platform that enables users to browse and reserve rental cars
-          that are currently available, all in one convenient place.
+            <MDBCardTitle id='heading-2'>Vision</MDBCardTitle>
+            <MDBCardText style={{fontStyle: 'italic'}}>
+            <span style={{color: 'orange', fontWeight: 'bold', fontSize: '20px'}}>" </span>
+            Empowering Mobility, Transforming Experiences: Redefining Car Rental for a Seamless Journey
+            <span style={{color: 'orange', fontWeight: 'bold', fontSize: '20px'}}> "</span>
             </MDBCardText>
             <MDBCardText>
               {/* <small className='text-muted'>Last updated 3 mins ago</small> */}
