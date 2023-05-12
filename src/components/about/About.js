@@ -1,27 +1,27 @@
-import React from 'react';
-// import css
-import './About.css'
-import NavBar from '../NavBar/NavBar';
+import React from "react";
+import "./About.css";
+import Story from './Story'
+import Mission from "./Mission";
+// import { MDBBtn } from 'mdb-react-ui-kit';
+
 export default function About() {
   return (
-    <>
-    <NavBar />
-      <div id='abt'>
-          <div className='img'>
-              <img src='https://bit.ly/3kKHTl0' alt='img' width={450} height={450} />
-            <div className='text'>
-                <h1>Mission statement</h1>
-                <br />
-                <p>
-                At Hireo, we understand how frustrating it can be to find a suitable rental car,
-                  especially when you're short on time. 
-                  That's why we've created a platform that enables users to browse 
-                  and reserve rental cars that are currently available, 
-                all in one convenient place.
-                </p>
-            </div>
-          </div>
+    <div id="about">
+      <div id="mission">
+        {/* <h1 id="heading">What we do</h1>
+        <p>
+          At Hireo, we understand how frustrating it can be to find a suitable
+          rental car, especially when you're short on time. That's why we've
+          created a platform that enables users to browse and reserve rental cars
+          that are currently available, all in one convenient place.
+        </p>
       </div>
-    </>
-  )
+      <div id="story"> */}
+        <Story />
+        <div id="statement">
+        <Mission />
+        </div>
+      </div>
+    </div>
+  );
 }

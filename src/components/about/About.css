@@ -1,39 +1,26 @@
-#abt{
-    /* background-image: url(https://images.unsplash.com/photo-1508161250369-a7ecbdfb67fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=2000&q=60);
-    background-position: fixed !important;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    height: 100vh;
-    /* background-color: hsl(38, 12%, 82%); */
+#about{
+    margin-top: 4em;
 }
-/* https://unsplash.com/photos/wsMwDxF8SKA */
-.img{
-    padding-top: 13.5em;
-    padding-left: 4em;
+#mission, #story,#statement, #hire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
-.text{
-    padding-top: 4em;
-    float:right;
-    /* background:lightgray; */
-    width:50%;
-    padding-right: 10em;
-    /* padding-left: 3em; */
-    height: 50vh;
-    /* height:280px; */
+#heading{
+    font-size: 40px;
+    font-weight: bold;
 }
-.text h1{
+#heading-2{
     font-size: 30px;
     font-weight: bold;
-    /* color: red; */
 }
-
-.text p{
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    /* color: green; */
+#story{
+    margin-top: 3em;
 }
-#abt{
-    padding-bottom: 5em;
-    /* padding-top: 60em; */
+#statement{
+    /* margin-top: 4em; */
+    height: 50vh;
 }
