@@ -13,7 +13,7 @@ import { MDBBtn } from 'mdb-react-ui-kit';
 
 export default function Story() {
   return (
-    <MDBCard style={{ maxWidth: '1400px' }}>
+    <MDBCard style={{ maxWidth: '1400px', boxShadow: 'none' }}>
       <MDBRow className='g-0'>
         <MDBCol md='4'>
           <MDBCardImage src='https://cdn.dribbble.com/users/443286/screenshots/1461355/media/9d4eff00ce98f602f0a6e25e85361b25.gif' alt='...' fluid />

@@ -1,9 +1,11 @@
 import React from 'react'
 import '../about/About.css'
+import Client from './Client'
 export default function Hire() {
   return (
-    <div>
-        <h1 id='heading'>Hire With us!</h1>
+    <div id='hire-page'>
+        <h1 id='heading' className='hire-head'>Hire With us!</h1>
+        <Client />
     </div>
   )
 }

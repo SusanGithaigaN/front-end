@@ -1,7 +1,8 @@
 // import css
-import NavBar from "../NavBar/NavBar";
+// import NavBar from "../NavBar/NavBar";
 import "./Client.css";
 import React, { useState, useEffect } from "react";
+import { MDBIcon } from "mdb-react-ui-kit";
 
 export default function Client() {
   const [cars, setCars] = useState([]);
@@ -15,7 +16,7 @@ export default function Client() {
 
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className="client">
         <p className="para2">Pick a car</p>
         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -25,7 +26,8 @@ export default function Client() {
                 <img
                   class="card-img-top"
                   src={car.image_url}
-                  alt="Card image cap"
+                  style={{width: '300px', height: '200px'}}
+                  alt="Loading..."
                 />
                 <div class="card-body">
                   <h5 class="card-title">Car Model: {car.model}</h5>
@@ -55,7 +57,7 @@ export default function Client() {
                       <div class="modal-content">
                         <div class="modal-header">
                           <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                            Modal title
+                            Hire a car <MDBIcon fab icon="hire-a-helper" style={{color: 'blue'}}/>
                           </h1>
                           <button
                             type="button"
@@ -64,7 +66,9 @@ export default function Client() {
                             aria-label="Close"
                           ></button>
                         </div>
-                        <div class="modal-body">...</div>
+                        <div class="modal-body">
+                          
+                        </div>
                         <div class="modal-footer">
                           <button
                             type="button"
@@ -74,7 +78,7 @@ export default function Client() {
                             Close
                           </button>
                           <button type="button" class="btn btn-primary">
-                            Understood
+                            Hire
                           </button>
                         </div>
                       </div>

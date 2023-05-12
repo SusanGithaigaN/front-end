@@ -1,7 +1,7 @@
 #about{
     margin-top: 4em;
 }
-#mission, #story,#statement, #hire{
+#mission, #story,#statement, #hire, #hire-page{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,5 +22,12 @@
 }
 #statement{
     /* margin-top: 4em; */
-    height: 50vh;
+    height: fit-content;
+}
+#hire{
+    margin-top: 8em;
+}
+.hire-head{
+    margin: 2%;
+    margin-bottom: 1em;
 }
