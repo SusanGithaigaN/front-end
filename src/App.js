@@ -9,13 +9,18 @@ import About from './components/about/About';
 import Dashboard from './components/Admin/Dashboard';
 import Welcome from './components/Admin/Welcome';
 import AllCars from './components/Admin/AllCars';
+import AdminLogin from './components/Admin/AdminLogin';
+import Login from './components/Login/Login';
+import NavBar from './components/NavBar/NavBar';
+import Signup from './components/Signup/Signup';
+import Hire from './components/client/Hire';
 
 
 
 function App() {
   return (
     <BrowserRouter>
-    {/* <NavBar /> */}
+    <NavBar />
       <Routes>
       <Route path='/' element={<Home />} />
       <Route exact path='about' element={<About />} />
@@ -24,9 +29,14 @@ function App() {
       <Route exact path='/dashboard' element={<Dashboard />} />
       <Route exact path='/welcome' element={<Welcome />} />
       <Route exact path='/allcars' element={<AllCars />} />
+      <Route path='/login' element={<Login />} />
+      <Route exact path='/usersignup' element={<Signup />} />
+      <Route exact path='hire' element={<Hire />} />
+      <Route exact path='/adminlogin' element={<AdminLogin />} />
       </Routes>
       </BrowserRouter>
   );
 }
 
 export default App;
+

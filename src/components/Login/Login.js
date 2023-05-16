@@ -1,221 +1,93 @@
-import React from "react";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default function Login() {
+import './Login.css';
+
+import {
+  MDBBtn,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+  MDBInput
+}
+  from 'mdb-react-ui-kit';
+
+function Login() {
+  const navigate = useNavigate();
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleUsernameChange = (event) => {
+    setUsername(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    try {
+      const response = await fetch('http://localhost:9292/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password }),
+      });
+  
+      if (response.ok) {
+        const data = await response.json();
+        if (data.username) {
+          navigate('/hire');
+        }
+      } else {
+        console.log('Login failed');
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
   return (
-    <div>
-      {/* <!-- Pills navs --> */}
-      <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link active"
-            id="tab-login"
-            data-mdb-toggle="pill"
-            href="#pills-login"
-            role="tab"
-            aria-controls="pills-login"
-            aria-selected="true">
-            Login
-          </a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link"
-            id="tab-register"
-            data-mdb-toggle="pill"
-            href="#pills-register"
-            role="tab"
-            aria-controls="pills-register"
-            aria-selected="false"
-          >
-            Register
-          </a>
-        </li>
-      </ul>
-      {/* <!-- Pills navs -->
+    <div id='login-page'>
+    
+    <MDBContainer fluid>
+      <MDBRow>
 
-<!-- Pills content --> */}
-      <div class="tab-content">
-        <div
-          class="tab-pane fade show active"
-          id="pills-login"
-          role="tabpanel"
-          aria-labelledby="tab-login"
-        >
-          <form>
-            <div class="text-center mb-3">
-              <p>Sign in with:</p>
-              <button type="button" class="btn btn-secondary btn-floating mx-1">
-                <i class="fab fa-facebook-f"></i>
-              </button>
+        <MDBCol sm='6'>
+        <form onSubmit={handleSubmit}>
 
-              <button type="button" class="btn btn-secondary btn-floating mx-1">
-                <i class="fab fa-google"></i>
-              </button>
+          <div className='d-flex flex-row ps-5 pt-5'>
+            <MDBIcon fas icon="crow fa-3x me-3" style={{ color: '#709085' }} />
+            <span className="h1 fw-bold mb-0">Logo</span>
+          </div>
 
-              <button type="button" class="btn btn-secondary btn-floating mx-1">
-                <i class="fab fa-twitter"></i>
-              </button>
+          <div className='d-flex flex-column justify-content-center h-custom-2 w-75 pt-4'>
 
-              <button type="button" class="btn btn-secondary btn-floating mx-1">
-                <i class="fab fa-github"></i>
-              </button>
-            </div>
+            <h3 className="fw-normal mb-3 ps-5 pb-3" style={{ letterSpacing: '1px' }}>Log in</h3>
+            
+            <MDBInput wrapperClass='mb-4 mx-5 w-100' label='username' id='formControlLg' type='username' size="lg" value={username} onChange={handleUsernameChange} />
+            <MDBInput wrapperClass='mb-4 mx-5 w-100' label='Password' id='formControlL' type='password' size="lg" value={password} onChange={handlePasswordChange} />
 
-            <p class="text-center">or:</p>
+            <MDBBtn className="mb-4 px-5 mx-5 w-100" color='info' size='lg' type='submit'>Login</MDBBtn>
+            <p className="small mb-5 pb-lg-3 ms-5"><a class="text-muted" href="#!">Forgot password?</a></p>
+            <p className='ms-5'>Don't have an account? <a href="/usersignup" class="link-info">Register here</a></p>
 
-            {/* <!-- Email input --> */}
-            <div class="form-outline mb-4">
-              <input type="email" id="loginName" class="form-control" />
-              <label class="form-label" for="loginName">
-                Email or username
-              </label>
-            </div>
-
-            {/* <!-- Password input --> */}
-            <div class="form-outline mb-4">
-              <input type="password" id="loginPassword" class="form-control" />
-              <label class="form-label" for="loginPassword">
-                Password
-              </label>
-            </div>
-
-            {/* <!-- 2 column grid layout --> */}
-            <div class="row mb-4">
-              <div class="col-md-6 d-flex justify-content-center">
-                {/* <!-- Checkbox --> */}
-                <div class="form-check mb-3 mb-md-0">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="loginCheck"
-                    checked
-                  />
-                  <label class="form-check-label" for="loginCheck">
-                    {" "}
-                    Remember me{" "}
-                  </label>
-                </div>
-              </div>
-
-              <div class="col-md-6 d-flex justify-content-center">
-                {/* <!-- Simple link --> */}
-                <a href="#!">Forgot password?</a>
-              </div>
-            </div>
-
-            {/* <!-- Submit button --> */}
-            <button type="submit" class="btn btn-primary btn-block mb-4">
-              Sign in
-            </button>
-
-            {/* <!-- Register buttons --> */}
-            <div class="text-center">
-              <p>
-                Not a member? <a href="#!">Register</a>
-              </p>
-            </div>
+          </div>
           </form>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="pills-register"
-          role="tabpanel"
-          aria-labelledby="tab-register"
-        >
-          <form>
-            <div class="text-center mb-3">
-              <p>Sign up with:</p>
-              <button type="button" class="btn btn-secondary btn-floating mx-1">
-                <i class="fab fa-facebook-f"></i>
-              </button>
+        </MDBCol>
+        <MDBCol sm='6' className='d-none d-sm-block px-0'>
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img3.webp"
+            alt="Login" className="w-100" style={{ objectFit: 'cover', objectPosition: 'left' }} />
+        </MDBCol>
 
-              <button type="button" class="btn btn-secondary btn-floating mx-1">
-                <i class="fab fa-google"></i>
-              </button>
+      </MDBRow>
 
-              <button type="button" class="btn btn-secondary btn-floating mx-1">
-                <i class="fab fa-twitter"></i>
-              </button>
-
-              <button type="button" class="btn btn-secondary btn-floating mx-1">
-                <i class="fab fa-github"></i>
-              </button>
-            </div>
-
-            <p class="text-center">or:</p>
-
-            {/* <!-- Name input --> */}
-            <div class="form-outline mb-4">
-              <input type="text" id="registerName" class="form-control" />
-              <label class="form-label" for="registerName">
-                Name
-              </label>
-            </div>
-
-            {/* <!-- Username input --> */}
-            <div class="form-outline mb-4">
-              <input type="text" id="registerUsername" class="form-control" />
-              <label class="form-label" for="registerUsername">
-                Username
-              </label>
-            </div>
-
-            {/* <!-- Email input --> */}
-            <div class="form-outline mb-4">
-              <input type="email" id="registerEmail" class="form-control" />
-              <label class="form-label" for="registerEmail">
-                Email
-              </label>
-            </div>
-
-            {/* <!-- Password input --> */}
-            <div class="form-outline mb-4">
-              <input
-                type="password"
-                id="registerPassword"
-                class="form-control"
-              />
-              <label class="form-label" for="registerPassword">
-                Password
-              </label>
-            </div>
-
-            {/* <!-- Repeat Password input --> */}
-            <div class="form-outline mb-4">
-              <input
-                type="password"
-                id="registerRepeatPassword"
-                class="form-control"
-              />
-              <label class="form-label" for="registerRepeatPassword">
-                Repeat password
-              </label>
-            </div>
-
-            {/* <!-- Checkbox --> */}
-            <div class="form-check d-flex justify-content-center mb-4">
-              <input
-                class="form-check-input me-2"
-                type="checkbox"
-                value=""
-                id="registerCheck"
-                checked
-                aria-describedby="registerCheckHelpText"
-              />
-              <label class="form-check-label" for="registerCheck">
-                I have read and agree to the terms
-              </label>
-            </div>
-
-            {/* <!-- Submit button --> */}
-            <button type="submit" class="btn btn-primary btn-block mb-3">
-              Sign in
-            </button>
-          </form>
-        </div>
-      </div>
-      {/* <!-- Pills content --> */}
+    </MDBContainer>
+    
     </div>
   );
 }
+
+export default Login;

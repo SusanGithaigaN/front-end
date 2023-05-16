@@ -1,31 +1,49 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import logo from './hire.jpeg';
-
-// import css
-import './NavBar.css'
+import React from 'react'
+import {
+    MDBNavbar,
+    MDBNavbarToggler,
+    MDBIcon,
+    MDBNavbarNav,
+    MDBNavbarItem,
+    MDBNavbarLink,
+    MDBContainer
+} from 'mdb-react-ui-kit';
 
 export default function NavBar() {
-  return (
-    <div id='nav'>
-        <Navbar bg="transparent" expand="lg" style={{backgroundColor: 'lightgray'}}>
-        <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-            <Nav.Link href="/" id='navtxt'>Home</Nav.Link>
-              <Nav.Link href="about" id='navtxt'>About Us</Nav.Link>
-              {/* <Nav.Link href="client" id='navtxt'>🚘 Hire</Nav.Link> */}
-
-                <img src={logo} alt='logo' className='Navbar-logo' />
-
-              <Nav.Link href="/" id='apptitle'>ireo</Nav.Link>
-              <Nav.Link href="/dashboard" id='navtxt' className='one1'>👤 Admin</Nav.Link>
-            </Nav>
-        </Navbar.Collapse>
-        </Container>
-    </Navbar>
-  </div>
-  )
+    return (
+        <div>
+            <MDBNavbar expand='lg' light bgColor='white'>
+                <MDBContainer fluid>
+                    <MDBNavbarToggler
+                        aria-controls='navbarExample01'
+                        aria-expanded='false'
+                        aria-label='Toggle navigation'
+                    >
+                        <MDBIcon fas icon='bars' />
+                    </MDBNavbarToggler>
+                    <div className='collapse navbar-collapse' id='navbarExample01'>
+                        <MDBNavbarNav right className='mb-2 mb-lg-0'>
+                            <MDBNavbarItem active>
+                                <MDBNavbarLink aria-current='page' href='/'>
+                                    Home
+                                </MDBNavbarLink>
+                            </MDBNavbarItem>
+                            <MDBNavbarItem>
+                                <MDBNavbarLink href='#about-page'>About Us</MDBNavbarLink>
+                            </MDBNavbarItem>
+                            <MDBNavbarItem>
+                                <MDBNavbarLink href='/hire'>Hire </MDBNavbarLink>
+                            </MDBNavbarItem>
+                            <MDBNavbarItem>
+                                <MDBNavbarLink href='/login'>Login</MDBNavbarLink>
+                            </MDBNavbarItem>
+                            <MDBNavbarItem>
+                                <MDBNavbarLink href='/usersignup'>Signup</MDBNavbarLink>
+                            </MDBNavbarItem>
+                        </MDBNavbarNav>
+                    </div>
+                </MDBContainer>
+            </MDBNavbar>
+        </div>
+    )
 }

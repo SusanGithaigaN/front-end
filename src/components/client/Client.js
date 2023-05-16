@@ -3,7 +3,7 @@
 import "./Client.css";
 import React, { useState, useEffect } from "react";
 import { MDBIcon } from "mdb-react-ui-kit";
-import axios from 'axios';
+// import axios from 'axios';
 
 
 export default function Client() {
@@ -17,9 +17,9 @@ export default function Client() {
       .catch((err) => console.log(err));
   }, []);
 
-    const handleBasicClick = (car) => {
-      setSelectedCar(car);
-    }
+    // const handleBasicClick = (car) => {
+    //   setSelectedCar(car);
+    // }
 
     // loan car
     // set car details
