@@ -29,9 +29,9 @@ function App() {
       <Route exact path='/dashboard' element={<Dashboard />} />
       <Route exact path='/welcome' element={<Welcome />} />
       <Route exact path='/allcars' element={<AllCars />} />
-      <Route path='/login' element={<Login />} />
+      <Route exact path='/login' element={<Login />} />
       <Route exact path='/usersignup' element={<Signup />} />
-      <Route exact path='hire' element={<Hire />} />
+      <Route exact path='/hire' element={<Hire />} />
       <Route exact path='/adminlogin' element={<AdminLogin />} />
       </Routes>
       </BrowserRouter>

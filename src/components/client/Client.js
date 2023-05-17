@@ -11,7 +11,7 @@ export default function Client() {
   const [selectedCar, setSelectedCar] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:9292/")
+    fetch("http://localhost:9292/cars")
       .then((res) => res.json())
       .then((data) => setCars(data))
       .catch((err) => console.log(err));
