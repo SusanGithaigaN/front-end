@@ -1,6 +1,8 @@
 import React from 'react';
 import About from '../about/About';
+import Services from '../Services/Services';
 // import Hire from '../client/Hire';
+import './Home.css'
 
 export default function Home() {
   return (
@@ -27,9 +29,9 @@ export default function Home() {
     <div id='about-page'>
     <About />
     </div>
-    {/* <div id='hire'>
-      <Hire />
-    </div> */}
+    <div id='services'>
+      <Services />
+    </div>
 </div>
   );
 }
