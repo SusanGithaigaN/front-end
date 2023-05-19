@@ -3,6 +3,7 @@ import About from '../about/About';
 import Services from '../Services/Services';
 // import Hire from '../client/Hire';
 import './Home.css'
+import Contact from '../Contact/Contact';
 
 export default function Home() {
   return (
@@ -31,6 +32,10 @@ export default function Home() {
     </div>
     <div id='services'>
       <Services />
+    </div>
+    <div id='contact-us'>
+    <h1 id='head'>Contact us</h1>
+      <Contact />
     </div>
 </div>
   );

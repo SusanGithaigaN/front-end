@@ -74,7 +74,7 @@ export default function Client() {
     <>
       {/* <NavBar /> */}
       <div className="client">
-        <p className="para2">Pick a car</p>
+        {/* <p className="para2">Pick a car</p> */}
         <div class="row row-cols-1 row-cols-md-3 g-4">
           {cars.map((car) => (
             <div class="col" key={car.id}>
@@ -88,6 +88,7 @@ export default function Client() {
                 <div class="card-body">
                   <h5 class="card-title">Car Model: {car.model}</h5>
                   <p class="card-text">Speed: {car.speed}</p>
+                  <p class="card-text">Description: {car.description}</p>
                   {/* <button type="button" class="btn btn-secondary">Hire</button> */}
                   {/* <!-- Button trigger modal --> */}
                   <button
