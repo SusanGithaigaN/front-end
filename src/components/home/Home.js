@@ -11,7 +11,7 @@ export default function Home() {
     <div>
     <header style={{ paddingLeft: 0 }}>
       <div
-        className='p-5 text-center bg-image'
+        className='p-5 text-center bg-image' id='hero'
         style={{ backgroundImage: "url('https://bit.ly/3LWqnDX')", height: 700 }}
       >
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
