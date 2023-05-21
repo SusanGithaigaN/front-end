@@ -45,7 +45,7 @@ export default function Footer() {
             </MDBCol>
 
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Cateegories</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Categories</h6>
               <p>
                 <a href='#!' className='text-reset'>
                 Economy car
@@ -96,17 +96,17 @@ export default function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                Kiambu, Kiambu, Kenya, KE
+                 Kiambu, Kenya, KE
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                susangithaiga26@gmail.com
+                 hireo@gmail.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 254 0700 000 000
+                <MDBIcon icon="phone" className="me-3" />+ 254 0700 000 000
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 254 0700 000 000
+                <MDBIcon icon="print" className="me-3" />+ 254 0700 000 000
               </p>
             </MDBCol>
           </MDBRow>

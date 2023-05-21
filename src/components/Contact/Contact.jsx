@@ -14,7 +14,7 @@ export default function Contact() {
                 <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
                   <div className="justify-content-center align-items-center h-100">
                     <div className="text-center" style={{ marginTop: '220px' }}>
-                      <MDBIcon fas icon="truck text-white" size="3x" />
+                      <MDBIcon fas icon="truck text-white" size="3x"/>
                       <p className="text-white title-style">Hireo</p>
                       <p className="text-white mb-0"></p>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBAccordion, MDBAccordionItem } from 'mdb-react-ui-kit';
-import '../Services/Services.css'
+// import '../Services/Services.css'
 export default function FAQ() {
 
   return (

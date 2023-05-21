@@ -39,7 +39,7 @@ function Login() {
       if (response.ok) {
         const data = await response.json();
         if (data.username) {
-          navigate('/hire');
+          navigate('/');
         }
       } else {
         console.log('Login failed');
