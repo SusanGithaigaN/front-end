@@ -84,7 +84,7 @@ export default function Services() {
           </MDBCol>
         </MDBRow>
       </MDBCard>
-      <MDBCard style={{ maxWidth: '1400px', marginBottom: '4em' }} id='service'>
+      {/* <MDBCard style={{ maxWidth: '1400px', marginBottom: '4em' }} id='service'>
         <MDBRow className='g-0'>
           <MDBCol md='4'>
             <MDBCardImage src='https://bit.ly/3ItwQp3' alt='...' fluid height='50px' />
@@ -127,7 +127,7 @@ export default function Services() {
             </MDBCardBody>
           </MDBCol>
         </MDBRow>
-      </MDBCard>
+      </MDBCard> */}
       <h1>Frequently asked questions</h1>
       <FAQ />
     </>
